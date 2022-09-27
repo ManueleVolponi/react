@@ -10,7 +10,7 @@ class App extends Component {
     return (
         <>
         <div className="app">
-            <div className="container mt-4">
+            <div>
             <Layout />
             <Routes>
                 <Route path="/" element={<Home />} exec />
