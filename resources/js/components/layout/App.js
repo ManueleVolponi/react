@@ -3,7 +3,8 @@ import {Route, Routes} from 'react-router-dom'
 
 import Home from '../pages/Home'
 import About from '../pages/About'
-import Layout from '../component/Header'
+import Layout from '../layout-constructor/Header'
+import Footer from '../layout-constructor/Footer'
 
 class App extends Component {
   render() {
@@ -12,10 +13,13 @@ class App extends Component {
         <div className="app">
             <div>
             <Layout />
-            <Routes>
-                <Route path="/" element={<Home />} exec />
-                <Route path="/about"  element={<About />} />
-            </Routes>
+            <div className='pt-5 pb-5'>
+              <Routes>
+                  <Route path="/" element={<Home />} exec />
+                  <Route path="/about"  element={<About />} />
+              </Routes>
+            </div>
+            <Footer />
             </div>
         </div>
       </>

@@ -16,7 +16,7 @@ class Layout extends Component {
                     </li>
 
                     <li>
-                      <Link to="/about">About</Link>
+                      <Link to="/about">Chi Siamo</Link>
                     </li>
                 </ul>
             </nav>
